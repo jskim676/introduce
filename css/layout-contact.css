@@ -1,0 +1,124 @@
+
+/* contact-window */  
+#contact-window {
+  position:absolute;
+  user-select: none;
+
+  }
+  
+#contact-window > div {
+  width:48vw;
+  height:65vh;
+  background-color: var(--bgc-189);
+  position: absolute;
+  left:25vw;
+  top:10vh;
+}
+
+/* name */
+#contact-window > div > div:nth-child(1) {
+  width:99.5%;
+  height:5vh;
+}
+
+#contact-window > div > div:nth-child(1) > img {
+  width:40px;
+  height:40px;
+  -webkit-user-drag: none;
+}
+
+#contact-window > div > div:nth-child(1) > h1{
+  width:88%;
+  color:var(--bgc-255);
+  font-size: 2rem;
+}
+
+#contact-window > div > div:nth-child(1) > div {
+  width:2vw;
+  height:100%;
+}
+
+#contact-window > div > div:nth-child(1) > div > div {
+  width:1.8vw;
+  height:1.8vw;
+  background-color:var(--bgc-192);
+}
+
+
+#contact-window > div > div:nth-child(1) > div > div:nth-child(1) > span:nth-child(1) {
+  width:1.2vw;
+  height:0.25vh;
+  background-color: var(--bgc-000);
+  border-radius: 1vw;
+  transform: rotate(42.5deg);
+  
+  position:absolute;
+} 
+
+#contact-window > div > div:nth-child(1) > div > div:nth-child(1) > span:nth-child(2) {
+  width:1.2vw;
+  height:0.25vh;
+  background-color: var(--bgc-000);
+  border-radius: 1vw;
+  transform: rotate(-42.5deg);
+  
+  position:absolute;
+} 
+
+#contact-window > div > div:nth-child(2) {
+  width:inherit;
+  height:65vh;
+}
+
+/* profile */
+#profile {
+  width:70%;
+  height:40%;
+}
+
+#profile > div:nth-child(1) > img {
+  width:12vw;
+  height:12vw;
+  border-radius: 5px;
+  -webkit-user-drag: none;
+}
+
+#profile > div:nth-child(2) {
+  line-height: 4vh;
+  margin-left:6vw;
+}
+#profile > div:nth-child(2) > h2 {
+  line-height: 5vh;
+}
+
+/* contact-address */
+#contact-address {
+  width:70%;
+  height:40%;
+}
+
+#contact-address > div:nth-child(1) > img {
+  width:8vw;
+  height:8vw;
+  margin-left:2vw;
+  -webkit-user-drag: none;
+}
+
+#contact-address > div:nth-child(2) > p {
+  line-height: 4vh;
+  margin-left:8vw;
+}
+
+
+/* 작업표시줄 */
+#contact-taskBar > img {
+  width:1.5vw;
+  height:1.5vw;
+  margin-left:0.5vw;
+  -webkit-user-drag: none;
+}
+
+#contact-taskBar > p {
+  margin-left:0.5vw;
+}
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="root">
+    <main>
+      
+      <!-- hello world -->
+      <div id="hello-world">
+        <div class="window-style flex-column-center-center">
+          <div class="top-bar flex-flexstart-center">
+            <h1>Hello, world!</h1>
+          </div>
+          <div class="flex-column-center-center">
+            <p>만나뵙게 되어 반갑습니다.</p>
+            <p>게임을 정말 좋아하는 한 사람을 소개해보겠습니다.</p>
+          </div>
+          <button id="confirm" class="window-style">확인</button>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div id="main" class="hidden">
+        <div class="flex">
+          <!-- icon -->
+          <div id="icon" class="flex-column-spaceevenly-center">
+            <div>
+              <img src="./img/win98_icon/game_icon.svg" alt="game">
+              <p>Game</p>
+            </div>
+            <div>
+              <img src="./img/win98_icon/curriculum_icon.svg" alt="curriculum">
+              <p>Curriculum</p>
+            </div>
+            <div>
+              <img src="./img/win98_icon/portfolio_icon.svg" alt="portfolio">
+              <p>Portfolio</p>
+            </div>
+            <div>
+              <img src="./img/win98_icon/contact_icon.svg" alt="contact">
+              <p>Contact</p>
+            </div>
+          </div>
+
+          <!-- game-window -->
+          <div>
+            <div id="game-window" class="hidden">
+              <div class="window-style flex-column-spacearound-center">
+                <!-- name -->
+                <div class="top-bar smallTopBar flex-spacearound-center">
+                  <img src="./img/win98_icon/game_icon.svg" alt="game">
+                  <h1>Game</h1>
+                  <div id="game-window-button" class="flex-spacearound-center">
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                    <div class="window-style flex-center-center">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- totaltime -->
+                <div class="flex-flexstart-center">
+                  <div>
+                    김준식 님께서는 지금까지 게임에 대략 20,000시간을 보냈습니다.
+                  </div>
+                </div>
+  
+                <!-- gamelist -->
+                <div class="flex">
+                  <div id="gameicon" class="flex">
+                    <div data-gameicon="0" class="flex-column-center-center outLine">
+                      <img src="./img/game_icon/lol_icon.svg" alt="lol" data-gameicon="0">
+                      <p>League of Legends</p>
+                    </div>
+                    <div data-gameicon="1" class="flex-column-center-center">
+                      <img src="./img/game_icon/maple_icon2.svg" alt="maple" data-gameicon="1">
+                      <p>MapleStory</p>
+                    </div>
+                    <div data-gameicon="2" class="flex-column-center-center">
+                      <img src="./img/game_icon/mabinogi_icon.svg" alt="mabinogi" data-gameicon="2">
+                      <p>Mabinogi</p>
+                    </div>
+                    <div data-gameicon="3" class="flex-column-center-center">
+                      <img src="./img/game_icon/deadbydaylight_icon.svg" alt="dbd" data-gameicon="3">
+                      <p>Dead By Daylight</p>
+                    </div>
+                    <div data-gameicon="4" class="flex-column-center-center">
+                      <img src="./img/game_icon/pubg_icon.svg" alt="pubg" data-gameicon="4">
+                      <p>PUBG</p>
+                    </div>
+                    <div data-gameicon="5" class="flex-column-center-center">
+                      <img src="./img/game_icon/apex_icon.svg" alt="apex" data-gameicon="5">
+                      <p>Apex Legends</p>
+                    </div>
+                    <div data-gameicon="6" class="flex-column-center-center">
+                      <img src="./img/game_icon/overwatch_icon.svg" alt="overawatch" data-gameicon="6">
+                      <p>Overwatch</p>
+                    </div>
+                    <div data-gameicon="7" class="flex-column-center-center">
+                      <img src="./img/game_icon/lostark_icon.svg" alt="lostark" data-gameicon="7">
+                      <p>Lost Ark</p>
+                    </div>
+                    <div data-gameicon="8" class="flex-column-center-center">
+                      <img src="./img/game_icon/l4d2_icon.svg" alt="l4d2" data-gameicon="8">
+                      <p>Left 4 Dead 2</p>
+                    </div>
+                    <div data-gameicon="9" class="flex-column-center-center">
+                      <img src="https://i.pinimg.com/originals/ff/3e/12/ff3e12af5edebc5301ca1571986bb68d.png" alt="gta5" data-gameicon="9">
+                      <p>GTA5</p>
+                    </div>
+                    <div data-gameicon="10" class="flex-column-center-center">
+                      <img src="./img/game_icon/teamFortress2_icon.svg" alt="teamfortress2" data-gameicon="10">
+                      <p>Team Fortress 2</p>
+                    </div>
+                    <div data-gameicon="11" class="flex-column-center-center">
+                      <img src="./img/game_icon/monsterHunterWorld_icon.svg" alt="monsterhunterworld" data-gameicon="11">
+                      <p>Monster Hunter:World</p>
+                    </div>
+                  </div>
+                  <div id="scrollBar" class="flex-column-flexstart-center">
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                    <div class="flex-center-flexstart">
+                      <div id="scroll" class="window-style"></div>
+                    </div>
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- gametime -->
+                <div class="flex-flexstart-center">
+                  <div id="gametime">League of Legends : 5,711 Hours</div>
+                </div>
+              </div>
+              <!-- question --> 
+              <div id="question" class="hidden">
+                <div class="flex-column-flexend-center">
+                  <div class="flex-column-spacebetween-center">
+                    <p>
+                      왜 이렇게 게임에 관심이 많으셨나요?
+                    </p>
+                    <p>
+                      움직이는 것 자체가 신기해 하는 나이일때, 게임은 조작하는 대로 움직이며 새로운 것을 배울 수 있고 성장하며 어려움을 극복하는 재미를 느꼈습니다. 게임에 대한 숙련이 쌓이고 친구들 사이에서 칭찬을 받으며 자신감을 얻게 되었습니다. 그래서 게임에 대한 열정이 커지고 지금보다 더 잘하고 싶다는 생각으로 새로운 게임이 나오면 누구보다 먼저 플레이하여 실력을 키워나갔습니다.
+                    </p>
+                  </div>
+                  <div class="flex-column-spacebetween-center">
+                    <p>
+                      게임과 웹퍼블리셔는 어떤 연관성이 있나요?
+                    </p>
+                    <p>
+                      자기가 좋아하지 않는 게임을 하는 사람은 없습니다. 웹디자인도 마찬가지로 저에게 있어서는 흥미가 있는 하나의 게임같은 느낌을 받게되었습니다. 조작하는 것에 있어 무언가 만들어 질 수 있으며, 아직 모르는 것들도 더 배우게 됨으로써 성장할 수 있다는 것이 좋습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="game-fullWindow" class="hidden">
+              <div class="window-style flex-column-spacearound-center">
+                <!-- name -->
+                <div class="top-bar flex-spacearound-center">
+                  <img src="./img/win98_icon/game_icon.svg" alt="game">
+                  <h1>Game</h1>
+                  <div id="game-fullWindow-button" class="flex-spacearound-center">
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                    <div class="window-style flex-center-center">
+                      <div></div>
+                    </div>
+                    <div class="window-style flex-center-center">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- totaltime -->
+                <div class="flex-flexstart-center">
+                  <div>
+                    김준식 님께서는 지금까지 게임에 대략 20,000시간을 보냈습니다.
+                  </div>
+                </div>
+  
+                <!-- gamelist -->
+                <div class="flex">
+                  <div id="fullGameicon" class="flex">
+                    <div data-gameicon="0" class="flex-column-center-center outLine">
+                      <img src="./img/game_icon/lol_icon.svg" alt="lol" data-gameicon="0">
+                      <p>League of Legends</p>
+                    </div>
+                    <div data-gameicon="1" class="flex-column-center-center">
+                      <img src="./img/game_icon/maple_icon2.svg" alt="maple" data-gameicon="1">
+                      <p>MapleStory</p>
+                    </div>
+                    <div data-gameicon="2" class="flex-column-center-center">
+                      <img src="./img/game_icon/mabinogi_icon.svg" alt="mabinogi" data-gameicon="2">
+                      <p>Mabinogi</p>
+                    </div>
+                    <div data-gameicon="3" class="flex-column-center-center">
+                      <img src="./img/game_icon/deadbydaylight_icon.svg" alt="dbd" data-gameicon="3">
+                      <p>Dead By Daylight</p>
+                    </div>
+                    <div data-gameicon="4" class="flex-column-center-center">
+                      <img src="./img/game_icon/pubg_icon.svg" alt="pubg" data-gameicon="4">
+                      <p>PUBG</p>
+                    </div>
+                    <div data-gameicon="5" class="flex-column-center-center">
+                      <img src="./img/game_icon/apex_icon.svg" alt="apex" data-gameicon="5">
+                      <p>Apex Legends</p>
+                    </div>
+                    <div data-gameicon="6" class="flex-column-center-center">
+                      <img src="./img/game_icon/overwatch_icon.svg" alt="overawatch" data-gameicon="6">
+                      <p>Overwatch</p>
+                    </div>
+                    <div data-gameicon="7" class="flex-column-center-center">
+                      <img src="./img/game_icon/lostark_icon.svg" alt="lostark" data-gameicon="7">
+                      <p>Lost Ark</p>
+                    </div>
+                    <div data-gameicon="8" class="flex-column-center-center">
+                      <img src="./img/game_icon/l4d2_icon.svg" alt="l4d2" data-gameicon="8">
+                      <p>Left 4 Dead 2</p>
+                    </div>
+                    <div data-gameicon="9" class="flex-column-center-center">
+                      <img src="https://i.pinimg.com/originals/ff/3e/12/ff3e12af5edebc5301ca1571986bb68d.png" alt="gta5" data-gameicon="9">
+                      <p>GTA5</p>
+                    </div>
+                    <div data-gameicon="10" class="flex-column-center-center">
+                      <img src="./img/game_icon/teamFortress2_icon.svg" alt="teamfortress2" data-gameicon="10">
+                      <p>Team Fortress 2</p>
+                    </div>
+                    <div data-gameicon="11" class="flex-column-center-center">
+                      <img src="./img/game_icon/monsterHunterWorld_icon.svg" alt="monsterhunterworld" data-gameicon="11">
+                      <p>Monster Hunter:World</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- gametime -->
+                <div class="flex-flexstart-center">
+                  <div id="fullGametime">League of Legends : 5,711 Hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- curriculum -->
+          <div id="curriculum-window" class="hidden">
+            <div class="window-style flex-column-spacearound-center">
+              <!-- name -->
+              <div class="top-bar flex-spacearound-center">
+                <img src="./img/win98_icon/curriculum_icon.svg" alt="curriculum">
+                <h1>Curriculum</h1>
+                <div id="curriculum-window-button" class="flex-spacearound-center">
+                  <div class="window-style flex-center-center">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- curriculum list -->
+              <div class="flex-spacearound-center">
+                <div class="flex-column-center-flexstart">
+                  <div class="flex">
+                    <div class="window-style flex-center-center">[디지털디자인_웹디자인] 웹디자이너, 웹퍼블리셔 양성과정</div>
+                    <div></div>
+                  </div>
+                  <div id="skill" class="window-style">
+                    <div class="flex-center-center">
+                      <img src="./img/skill_icon/html_icon.svg" alt="html">
+                      <img src="./img/skill_icon/css_icon.svg" alt="css">
+                      <img src="./img/skill_icon/js_icon.svg" alt="js">
+                      <img src="./img/skill_icon/scss_icon.svg" alt="scss">
+                      <img src="./img/skill_icon/figma_icon.svg" alt="figma">
+                      <img src="./img/skill_icon/github_icon.svg" alt="github">
+                    </div>
+                    <div class="flex-spaceevenly-center">
+                      <img src="./img/skill_icon/ajax_icon.svg" alt="ajax">
+                      <img src="./img/skill_icon/react_icon.svg" alt="react">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- portfolio -->
+          <div id="portfolio-window" class="hidden">
+            <div class="window-style flex-column-spacearound-center">
+              <!-- name -->
+              <div class="top-bar flex-spacearound-center">
+                <img src="./img/win98_icon/portfolio_icon.svg" alt="portfolio">
+                <h1>Portfolio</h1>
+                <div id="portfolio-window-button" class="flex-spacearound-center">
+                  <div class="window-style flex-center-center">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio list -->
+              <div class="flex-spacearound-center">
+                <div class="flex-column-flexend-center">
+                  <div class="flex-column-center-center">
+                    <p>League of Legends</p>
+                    <p>I</p>
+                  </div>
+                  <div class="flex-center-center">
+                    <div class="flex-center-center">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-column-center-center">
+                  <div class=flex-spacebetween-center>
+                    <p>공</p>
+                    <p>유</p>
+                  </div>
+                  <img src="./img/portfolio_img/intro_Gong_Yoo.png" alt="gongyoo">
+                </div>
+              </div>
+
+              <!-- check -->
+              <div class="flex-column-spacearound-center">
+                <div class="flex-spacearound-center">
+                  <p>LOL.ITEO</p>
+                  <p>배우 공유</p>
+                </div>
+                <div class="flex-spacearound-center">
+                  <button class="window-style">접속</button>
+                  <button class="window-style">접속</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div id="contact-window" class="hidden">
+            <div class="window-style flex-column-spacearound-center">
+              <!-- name -->
+              <div class="top-bar flex-spacearound-center">
+                <img src="./img/win98_icon/contact_icon.svg" alt="contact">
+                <h1>Contact</h1>
+                <div id="contact-window-button" class="flex-spacearound-center">
+                  <div class="window-style flex-center-center">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- contact -->
+              <div class="flex-column-center-center">
+                <div id="profile" class="flex-flexstart-center">
+                  <div>
+                    <img src="./img/contact/profile.png" alt="profile">
+                  </div>
+                  <div class="flex-column-center-flexstart">
+                    <h2>Profile</h2>
+                    <p>이름 : 김 준 식 ( Kim Jun Sik)</p>
+                    <p>나이 : 27세 ( 1996년 1월 25일 )</p>
+                    <p>주소 : 대전 유성구 원내동</p>
+                  </div>
+                </div>
+                <div id="contact-address" class="flex-flexstart-center">
+                  <div>
+                    <img src="./img/contact/kakao_qrcode.png" alt="qrcode">
+                  </div>
+                  <div class="flex-column-center-flexstart">
+                    <p>이메일: wkxndlsvk@gmail.com</p>
+                    <p>카카오톡 : AngelEye</p>
+                    <p>깃허브 : https://github.com/jskim676</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- start -->
+          <div id="start-window" class="hidden">
+            <div class="window-style flex-flexstart-center">
+              <!-- name -->
+              <div class="flex-flexstart-center">
+                <h1>Windows 98</h1>
+              </div>
+              <div>
+                <div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/html_icon.svg" alt="html">
+                    <p></p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/css_icon.svg" alt="css">
+                    <p>HTML ㅡ CSS ㅡ JS 웹 개발의 기초</p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/js_icon.svg" alt="js">
+                    <p></p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/scss_icon.svg" alt="scss">
+                    <p>심플한 표기법으로 구조화하여 표현</p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/figma_icon.svg" alt="figma">
+                    <p>웹 기반 디자인 툴로서 구조를 설계</p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/github_icon.svg" alt="github">
+                    <p>프로젝트 작업 내역을 관리</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/ajax_icon.svg" alt="ajax">
+                    <p>데이터를 서버에 요청하여 가져오기</p>
+                  </div>
+                  <div class="flex-flexstart-center">
+                    <img src="./img/skill_icon/react_icon.svg" alt="react">
+                    <p>현재 공부중인 자바스크립트 라이브러리</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </main>
+    <footer>
+      <div class="line">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="taskbar" class="flex-center-center">
+        <!-- start button -->
+        <div id="start" class="flex-center-center">
+          <button id="start-button" class="flex-center-center window-style">
+            <img src="./img/win98_icon/start_icon.svg" alt="시작아이콘">
+            <h1>시작</h1>
+          </button>
+          <!-- 세로 선 -->
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <!-- program  -->
+        <div id="program" class="flex-flexstart-center">
+        </div>
+        <!-- clock -->
+        <div id="clock" class="flex-center-center">
+          <div class="window-style-reverse flex-spacearound-center">
+            <img src="./img/win98_icon/question_icon.svg" alt="question" class="hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/script.js" type="module" defer></script>
+</body>
+</html>
