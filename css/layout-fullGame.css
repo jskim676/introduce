@@ -1,0 +1,138 @@
+
+/* game-window */  
+#game-fullWindow {
+  width: 100%;
+  height:100%;
+  user-select: none;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+#game-fullWindow > div:nth-child(1) {
+  width:100%;
+  height:94.2%;
+  background-color: var(--bgc-189);
+  position:absolute;
+}
+
+/* name */
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) {
+  width:99.5%;
+  height:6%;
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > img {
+  width:40px;
+  height:40px;
+  -webkit-user-drag:none;
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > h1{
+  width:88%;
+  color:var(--bgc-255);
+  font-size: 2rem;
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div {
+  width:6.5%;
+  height:100%;
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div > div {
+  width:1.8vw;
+  height:1.85vw;
+  background-color:var(--bgc-192);
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(1) > div {
+  width:1vw;
+  height:1vw;
+  border-bottom: 2px solid var(--bgc-000);
+} 
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(2) > div {
+  width:1vw;
+  height:1vw;
+  border:2px solid var(--bgc-000);
+  border-top: 3px solid var(--bgc-000);
+} 
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(3) > span:nth-child(1) {
+  width:1.2vw;
+  height:0.25vh;
+  background-color: var(--bgc-000);
+  border-radius: 1vw;
+  transform: rotate(42.5deg);
+  
+  position:absolute;
+} 
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(3) > span:nth-child(2) {
+  width:1.2vw;
+  height:0.25vh;
+  background-color: var(--bgc-000);
+  border-radius: 1vw;
+  transform: rotate(-42.5deg);
+  
+  position:absolute;
+  
+} 
+
+/* totaltime */
+#game-fullWindow > div:nth-child(1) > div:nth-child(2) {
+  width:99.5%;
+  height:5%;
+  border:1px solid var(--bgc-129);
+}
+
+#game-fullWindow > div:nth-child(1) > div:nth-child(2) > div {
+  margin-left:0.5vw;
+}
+
+/* gamelist */
+#game-fullWindow > div:nth-child(1) > div:nth-child(3) {
+  width:99.5%;
+  height:82%;
+  background-color: var(--bgc-255);
+  border-top:1px solid var(--bgc-000);
+  border-left:1px solid var(--bgc-000);
+  overflow:hidden;
+}
+
+#fullGameicon {
+  width:100%;
+  height:100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  position: relative;
+}
+
+#fullGameicon > div {
+  width:11vw;
+  height:20vh;
+  margin:1vw;
+}
+
+#fullGameicon > div > img {
+  width:8vw;
+  height:8vw;
+  -webkit-user-drag:none;
+}
+
+#fullGameicon > div > p {
+  padding:5px;
+  text-align: center;
+}
+
+/* fullGametime */
+#game-fullWindow > div:nth-child(1) > div:nth-child(4) {
+  width:99.5%;
+  height:5%;
+  border:1px solid var(--bgc-129);
+}
+
+#fullGametime {
+  margin-left:0.5vw;
+}

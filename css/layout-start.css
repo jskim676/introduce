@@ -1,0 +1,160 @@
+/* 작업표시줄 */
+#taskbar {
+  width:inherit;
+  height:5.6vh;
+}
+
+#taskbar > div:nth-child(1) {
+  width:8%;
+  height:inherit;
+}
+
+#start-button {
+  width:80%;
+  height:90%;
+  background-color: var(--bgc-192);
+}
+
+#start-button > img {
+  width:30px;
+  height:30px;
+  -webkit-user-drag: none;
+
+}
+
+#start-button > h1 {
+  font-size: 20px;
+  margin-left:0.5vw;
+}
+
+#taskbar > div:nth-child(1) > div:nth-child(2) {
+  width:4px;
+  height:90%;
+  margin-top:0.5vh;
+  margin-left:0.5vw;
+  display:flex;
+
+}
+
+#taskbar > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width:50%;
+  height:inherit;
+  background-color: var(--bgc-128);
+}
+
+#taskbar > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width:50%;
+  height:inherit;
+  background-color: var(--bgc-255);
+}
+
+#program {
+  width: 84%;
+  height:inherit;
+}
+
+#program > div {
+  width:15vw;
+  height:5vh;
+  background-color: var(--bgc-189);
+  margin:0.2vw;
+
+  display:flex;
+  align-items: center;
+}
+
+/* start-window */  
+#start-window {
+  position:absolute;
+}
+
+#start-window > div {
+  width:22vw;
+  height:50vh;
+  background-color: var(--bgc-189);
+  position: absolute;
+  top:44.5vh;
+}
+
+/* name */
+#start-window > div > div:nth-child(1) {
+  width:3vw;
+  height:99%;
+  background: linear-gradient(0deg, #0000FF 0%, #000080 100%);
+  position: relative;
+}
+
+#start-window > div > div:nth-child(1) > h1{
+  width:35vh;
+  height:3vw;
+  color:var(--bgc-255);
+  transform: rotate(-90deg);
+  transform-origin: 0 0 ;
+  position: absolute;
+  top:48vh;
+  left:0.3vw;
+  /* test */
+}
+
+
+#start-window > div > div:nth-child(2) {
+  width:100%;
+  height:inherit;
+}
+
+#start-window > div > div:nth-child(2) > div {
+  width:inherit;
+  height:calc(50vh/8);
+  padding-left: 0.5vw;
+  border-bottom:1px solid var(--bgc-000);
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(1) {
+  width:inherit;
+  height:calc(50vh/8*6);
+  padding-left: 0;
+  border-bottom:1px solid var(--bgc-000);
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(1) > div {
+  width:inherit;
+  height:calc(50vh/8);
+  padding-left: 0.5vw;
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(1) > div > img {
+  width:2.5vw;
+  height:2.5vw;
+  -webkit-user-drag: none;
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(1) > div > p {
+  padding-left: 0.5vw;
+}
+
+
+#start-window > div > div:nth-child(2) > div:nth-child(2) {
+  width:inherit;
+  height:calc(50vh/8*2);
+  padding-left: 0;
+  border-bottom:1px solid var(--bgc-000);
+}
+
+
+#start-window > div > div:nth-child(2) > div:nth-child(2) > div {
+  width:inherit;
+  height:calc(50vh/8);
+  padding-left: 0.5vw;
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(2) > div > img {
+  width:2.5vw;
+  height:2.5vw;
+  -webkit-user-drag: none;
+}
+
+#start-window > div > div:nth-child(2) > div:nth-child(2) > div > p {
+  padding-left: 0.5vw;
+}
+
+
