@@ -67,7 +67,7 @@ function iconClick (target, win, btn) {
       if(target === icon) {
         if(document.querySelector(idSet) === null) {
           createProgram(pgname, pgicon, pgtext);
-          if(idSet === `#${idSet.zero}`) {
+          if(target === icons[0]) {
             qs.classList.remove('hidden');
             qsmark.classList.remove('hidden');
           }
