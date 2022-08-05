@@ -190,7 +190,7 @@
 
 /* question */
 #game-window > div:nth-child(2)  {
-  width:20vw;
+  width:21vw;
   height:94.4vh;
   position:absolute;
   bottom:6vh;

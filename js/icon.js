@@ -20,10 +20,6 @@ function iconClick (target, win, btn) {
     three : 'Contact'
   }
   target.addEventListener('dblclick', function() {
-    // let num = 1;
-    // num++;
-    // win.children[0].style.zIndex = num;
-    // console.log(num);
     win.classList.remove('hidden');
 
     const createProgram = (name, icon, text) => {
