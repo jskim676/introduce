@@ -31,6 +31,7 @@
 
 #hello-world > div > div:nth-child(2) > p:nth-child(3) {
   margin-top: 2vh;
+  font-size: 14px;
 }
 
 
